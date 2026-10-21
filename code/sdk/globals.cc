@@ -61,8 +61,7 @@ bool sdk::globals::resolve() {
     current.gworld = reinterpret_cast<void**>(current.image + offsets::global::gworld);
     current.is_ready = true;
 
-    say(note::success, "[ sdk ] " + std::to_string(objects::count()) + " objects, first is " + probe
-        + ", dump " + offsets::dump_tag);
+    say(note::success, "[ sdk ] " + std::to_string(objects::count()) + " objects, first is " + probe + ", dump " + offsets::dump_tag);
 
     return true;
 }

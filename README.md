@@ -19,7 +19,7 @@ this was supposed to be a p2c we were going to sell. but after a while we js cou
 support selling a cheat for a game this bad, so it isnt one anymore. here, free. youre welcome. love u
 
 dx12 overlay, imgui menu, hooks `UObject::ProcessEvent` for the game thread and the swapchain for drawing.
-built off a 5.8.3 dump
+built off a 5.8.3 dump, make ur own version of Dumper-7, find the GNames and ez lmao
 
 ---
 
