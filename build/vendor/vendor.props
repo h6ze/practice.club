@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <ClCompile Include="$(PracticeVendor)imgui\imgui.cpp" />
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_demo.cpp" />
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_draw.cpp" />
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_impl_dx12.cpp" />
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_tables.cpp" />
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_widgets.cpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="$(PracticeVendor)detours\detours.cpp">
+      <ConformanceMode>false</ConformanceMode>
+      <WarningLevel>Level1</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)detours\disasm.cpp">
+      <ConformanceMode>false</ConformanceMode>
+      <WarningLevel>Level1</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)detours\modules.cpp">
+      <ConformanceMode>false</ConformanceMode>
+      <WarningLevel>Level1</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <ObjectFileName>$(IntDir)detours_modules.obj</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClInclude Include="$(PracticeVendor)detours\*.h" />
+    <ClInclude Include="$(PracticeVendor)imgui\*.h" />
+  </ItemGroup>
+
+</Project>

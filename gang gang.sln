@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "do you gang bang", "do you gang bang.vcxproj", "{6AE976A5-5C66-429C-80F8-A1C5BB67C450}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Dev|x64 = Dev|x64
+		Ship|x64 = Ship|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AE976A5-5C66-429C-80F8-A1C5BB67C450}.Dev|x64.ActiveCfg = Dev|x64
+		{6AE976A5-5C66-429C-80F8-A1C5BB67C450}.Dev|x64.Build.0 = Dev|x64
+		{6AE976A5-5C66-429C-80F8-A1C5BB67C450}.Ship|x64.ActiveCfg = Ship|x64
+		{6AE976A5-5C66-429C-80F8-A1C5BB67C450}.Ship|x64.Build.0 = Ship|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7896F17C-8059-4DC0-A8E6-A937E3EDE61F}
+	EndGlobalSection
+EndGlobal

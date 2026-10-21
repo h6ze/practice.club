@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Dev|x64">
+      <Configuration>Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Ship|x64">
+      <Configuration>Ship</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{6AE976A5-5C66-429C-80F8-A1C5BB67C450}</ProjectGuid>
+    <RootNamespace>practiceclub</RootNamespace>
+    <ProjectName>do you gang bang</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Ship|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(MSBuildThisFileDirectory)build\props\paths.props" />
+    <Import Project="$(MSBuildThisFileDirectory)build\props\compile.props" />
+    <Import Project="$(MSBuildThisFileDirectory)build\props\link.props" />
+    <Import Project="$(MSBuildThisFileDirectory)build\config\dev.props" Condition="'$(Configuration)' == 'Dev'" />
+    <Import Project="$(MSBuildThisFileDirectory)build\config\ship.props" Condition="'$(Configuration)' == 'Ship'" />
+  </ImportGroup>
+  <PropertyGroup>
+    <TargetName>practice.club</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="code\client\boot\bootstrap.cc" />
+    <ClCompile Include="code\client\boot\stages.cc" />
+    <ClCompile Include="code\client\bridge\dispatch.cc" />
+    <ClCompile Include="code\client\bridge\natives.cc" />
+    <ClCompile Include="code\client\diag\crash\capture\modules.cc" />
+    <ClCompile Include="code\client\diag\crash\capture\registers.cc" />
+    <ClCompile Include="code\client\diag\crash\capture\stack.cc" />
+    <ClCompile Include="code\client\diag\crash\handler.cc" />
+    <ClCompile Include="code\client\diag\crash\reason.cc" />
+    <ClCompile Include="code\client\diag\crash\report\minidump.cc" />
+    <ClCompile Include="code\client\diag\crash\report\report.cc" />
+    <ClCompile Include="code\client\diag\crash\report\writer.cc" />
+    <ClCompile Include="code\client\diag\log\detail\dedupe.cc" />
+    <ClCompile Include="code\client\diag\log\detail\timestamp.cc" />
+    <ClCompile Include="code\client\diag\log\logger.cc" />
+    <ClCompile Include="code\client\diag\log\sinks\archive.cc" />
+    <ClCompile Include="code\client\diag\log\sinks\console_sink.cc" />
+    <ClCompile Include="code\client\diag\log\sinks\file_sink.cc" />
+    <ClCompile Include="code\client\dllmain.cc" />
+    <ClCompile Include="code\client\platform\hook\binding.cc" />
+    <ClCompile Include="code\client\platform\hook\patch\transaction.cc" />
+    <ClCompile Include="code\client\platform\hook\patch\vtable.cc" />
+    <ClCompile Include="code\client\platform\input\hotkeys.cc" />
+    <ClCompile Include="code\client\platform\input\window.cc" />
+    <ClCompile Include="code\client\render\backend.cc" />
+    <ClCompile Include="code\client\render\dx12\device.cc" />
+    <ClCompile Include="code\client\render\dx12\frame\frame.cc" />
+    <ClCompile Include="code\client\render\dx12\frame\queue.cc" />
+    <ClCompile Include="code\client\render\dx12\swapchain.cc" />
+    <ClCompile Include="code\client\render\fonts\fonts.cc" />
+    <ClCompile Include="code\client\render\fonts\font_data.cc" />
+    <ClCompile Include="code\client\render\ui\draw.cc" />
+    <ClCompile Include="code\client\render\ui\overlay.cc" />
+    <ClCompile Include="code\client\render\ui\style\theme.cc" />
+    <ClCompile Include="code\client\render\ui\style\widgets.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\bots_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\match_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\modes_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\online_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\streaks_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\player\career_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\player\kit_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\world\media_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\world\world_tab.cc" />
+    <ClCompile Include="code\client\util\string\text.cc" />
+    <ClCompile Include="code\client\util\system\paths.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\props\paths.props" />
+    <None Include="build\props\compile.props" />
+    <None Include="build\props\link.props" />
+    <None Include="build\config\dev.props" />
+    <None Include="build\config\ship.props" />
+    <None Include="build\vendor\vendor.props" />
+  </ItemGroup>
+  <Import Project="$(MSBuildThisFileDirectory)build\vendor\vendor.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

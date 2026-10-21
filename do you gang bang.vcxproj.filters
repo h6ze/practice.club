@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{DE22934E-A4A9-5D98-B5BD-3091DFF4E766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\boot">
+      <UniqueIdentifier>{79E62E9D-7A54-5D2E-8101-6F483D07B3B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\bridge">
+      <UniqueIdentifier>{8DD2551F-4148-5D6A-BEC1-E4A0B6C0EAEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\diag">
+      <UniqueIdentifier>{99F96A30-1A24-598D-9689-05506B7E1EEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\diag\crash">
+      <UniqueIdentifier>{C8E10AFF-C1D7-5189-A06C-D002D74D7D0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\diag\crash\capture">
+      <UniqueIdentifier>{FA0CB280-36DC-5145-8E5F-42978CBF2226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\diag\crash\report">
+      <UniqueIdentifier>{9AB8548F-AB87-5A1D-916C-5A14DEA087FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\diag\log">
+      <UniqueIdentifier>{821811B7-7BD4-526C-8A31-1153EAD1EBAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\diag\log\detail">
+      <UniqueIdentifier>{BBBE1D02-30C7-5AD9-8561-3A8BCFEBD488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\diag\log\sinks">
+      <UniqueIdentifier>{85DE9096-86CF-59AA-96CD-971EE4CBD8F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\platform">
+      <UniqueIdentifier>{270B59A9-6E0E-5814-ABB8-156E7A925FDB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\platform\guard">
+      <UniqueIdentifier>{22B828D7-6333-5DB5-9D24-55E5A66EA9EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\platform\hook">
+      <UniqueIdentifier>{E5C30C82-010C-5275-A91E-5E85056FCEAA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\platform\hook\patch">
+      <UniqueIdentifier>{0A6062B0-3C98-5EA4-AAAD-EAB717424F85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\platform\input">
+      <UniqueIdentifier>{26E8E30F-4C2D-5E7C-A621-A1C323136D34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render">
+      <UniqueIdentifier>{374D3F93-9EA2-502C-B6A4-14A791753963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\dx12">
+      <UniqueIdentifier>{9A2FD466-0197-51E0-B807-F037E71A46EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\dx12\frame">
+      <UniqueIdentifier>{E7262564-F368-5076-B4B2-E5B1505E8CE7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\fonts">
+      <UniqueIdentifier>{FFF3165F-3EE3-55BA-93EF-9669BAE2F4CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\ui">
+      <UniqueIdentifier>{F1C2AAAF-73C6-566A-86A8-847A18EA236C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\ui\style">
+      <UniqueIdentifier>{15D1E3A1-EF84-5213-9253-CF8953D406FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\ui\tabs">
+      <UniqueIdentifier>{F2068E81-32B2-5C0E-9427-F716A19BB388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\ui\tabs\match">
+      <UniqueIdentifier>{79C95A8E-7798-57C5-A07E-D919A1288432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\ui\tabs\player">
+      <UniqueIdentifier>{7CE5296D-49B4-5D8A-84D3-FE90C17EF06D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\render\ui\tabs\world">
+      <UniqueIdentifier>{CC0BE5B2-3172-5022-AAFC-A693C762B8EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\util">
+      <UniqueIdentifier>{307501F9-818A-5207-AAEF-EF8C6BEA1277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\util\string">
+      <UniqueIdentifier>{43D9B56A-9142-5376-8B21-F539462488CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\util\system">
+      <UniqueIdentifier>{FC78030A-C6B0-5EEA-8590-6BD003937B69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detours">
+      <UniqueIdentifier>{0B1D1E5A-99F3-5BD6-AE03-274677D262EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{C6512A08-14BF-5E16-8ED9-EE7312F421DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\api">
+      <UniqueIdentifier>{80F2B93D-4FB5-5DD9-B919-19DD3EC7E212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\api\combat">
+      <UniqueIdentifier>{DD8FCC39-EDDE-5E45-A340-AEC3327AA5DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\api\match">
+      <UniqueIdentifier>{2B8EA17D-0B96-515B-AA61-4BAAB7FE4176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\api\player">
+      <UniqueIdentifier>{8F90E05C-FCC4-55AD-A054-FDEBBB0D7C42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\api\system">
+      <UniqueIdentifier>{63E5EBF7-9FEC-5266-820E-8FC106EA8F52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\api\world">
+      <UniqueIdentifier>{D3A53BDC-4C86-557C-BF0F-01A5A1EAA338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\data">
+      <UniqueIdentifier>{AF2CE7D6-C175-5B33-B198-8C9667A43D85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl">
+      <UniqueIdentifier>{F951BCF5-9FBF-5A2C-BE15-B3876EC86F1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\combat">
+      <UniqueIdentifier>{53E55175-AA6F-539D-B7B1-A416806E69AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\combat\aim">
+      <UniqueIdentifier>{41EAE3E3-841B-50D3-9489-9C576C4EABFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\combat\weapons">
+      <UniqueIdentifier>{D1AD75EF-6B69-57F7-961D-91DFD967BDF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\match">
+      <UniqueIdentifier>{C8D62070-9721-5128-84DB-76F3DFC2C38C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\match\arena">
+      <UniqueIdentifier>{BC1DAC44-22AB-50C9-B5BF-88366AD1D3AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\match\host">
+      <UniqueIdentifier>{37D1D073-5C88-592F-8A75-EDFB992CD688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\match\modes">
+      <UniqueIdentifier>{FD675FDB-F98F-546F-B344-415D8E6D7C6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\match\network">
+      <UniqueIdentifier>{8E61BE84-E65D-5AA7-84FB-1CA00D7614AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\player">
+      <UniqueIdentifier>{DBC95EF8-78ED-5BD9-A865-9041358F46D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\player\career">
+      <UniqueIdentifier>{BD4CB771-3CCF-5818-A82B-EA31F3DEE99D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\player\kit">
+      <UniqueIdentifier>{B902C77C-2C76-5986-B59B-528907B14F28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\player\movement">
+      <UniqueIdentifier>{23921921-EB75-5AB9-B50C-EA1B5A02278D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\player\progression">
+      <UniqueIdentifier>{DAF0894E-5472-5A11-9A70-49096DDBD81D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\player\view">
+      <UniqueIdentifier>{24A3CDD8-5FC5-59B2-AF3C-79444CBD9069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\system">
+      <UniqueIdentifier>{E55D774F-F2E5-5C70-824F-D8AAE2658B39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\system\enforce">
+      <UniqueIdentifier>{48976749-9B81-57E7-948D-2B5B18A22BA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\system\fields">
+      <UniqueIdentifier>{71B0E7C2-8662-5C69-9836-76ADD5377341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\world">
+      <UniqueIdentifier>{B5880BFD-D883-5C58-855E-F4526794B33E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\world\scenery">
+      <UniqueIdentifier>{7445D6A5-C209-5CB7-8ACF-F2159E089C39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\world\studio">
+      <UniqueIdentifier>{EBF71B15-6278-5F09-BD1C-9209E6CA1147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\impl\world\visuals">
+      <UniqueIdentifier>{EA317856-4AA1-5F69-87EE-1E82156DAC2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{1BA338B3-0647-5CFA-98A5-08C00C01F5F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{4B912C03-6CCF-58E7-8F07-DC88542A0D67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\core">
+      <UniqueIdentifier>{C3B91423-9ACA-519D-8B4B-DEC6F12DB0CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\core\reflect">
+      <UniqueIdentifier>{6A5FC592-4FF7-5D97-A3EA-898FA6A1EC82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\core\text">
+      <UniqueIdentifier>{E6F6B092-80F7-5CDA-8FDE-9BD347BE0EC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\hw2">
+      <UniqueIdentifier>{96041E5F-F5EC-5A45-8596-D1F668D25969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\hw2\arena">
+      <UniqueIdentifier>{456B5FE3-63C3-51E3-AD7D-94777E875817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\hw2\combat">
+      <UniqueIdentifier>{9E5FC58E-B5FE-50D8-8145-27129535FAC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\hw2\lobby">
+      <UniqueIdentifier>{5C2335F1-C533-59E1-B2B0-BC42B5437B14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\hw2\match">
+      <UniqueIdentifier>{12CC8712-24A2-5C73-A4D0-E947AAFE927D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\hw2\pawn">
+      <UniqueIdentifier>{5538D93A-981F-53DA-B1C0-967A2C25C128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\hw2\progression">
+      <UniqueIdentifier>{0F40BEA7-89C9-5E83-9D98-3DC9DA49C927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\hw2\studio">
+      <UniqueIdentifier>{8D5BE51E-015D-59E4-A537-272DE49A7D7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\unreal">
+      <UniqueIdentifier>{86C33158-3D3F-5257-AF37-DA80BC5F2DE0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\unreal\query">
+      <UniqueIdentifier>{1662EFAC-1A1F-5637-A615-23BACA37C779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\unreal\runtime">
+      <UniqueIdentifier>{A26CBAE0-5ABF-50CE-AA5B-3A0C5C08295B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\unreal\view">
+      <UniqueIdentifier>{C0A17B6F-8A46-5863-9E20-1A31BDCF600E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(PracticeVendor)imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_impl_dx12.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)detours\detours.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)detours\disasm.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PracticeVendor)detours\modules.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\boot\stages.cc" />
+    <ClCompile Include="code\client\bridge\dispatch.cc" />
+    <ClCompile Include="code\client\bridge\natives.cc" />
+    <ClCompile Include="code\client\diag\crash\capture\modules.cc" />
+    <ClCompile Include="code\client\diag\crash\capture\registers.cc" />
+    <ClCompile Include="code\client\diag\crash\capture\stack.cc" />
+    <ClCompile Include="code\client\diag\crash\handler.cc" />
+    <ClCompile Include="code\client\diag\crash\reason.cc" />
+    <ClCompile Include="code\client\diag\crash\report\minidump.cc" />
+    <ClCompile Include="code\client\diag\crash\report\report.cc" />
+    <ClCompile Include="code\client\diag\crash\report\writer.cc" />
+    <ClCompile Include="code\client\diag\log\detail\dedupe.cc" />
+    <ClCompile Include="code\client\diag\log\detail\timestamp.cc" />
+    <ClCompile Include="code\client\diag\log\logger.cc" />
+    <ClCompile Include="code\client\diag\log\sinks\archive.cc" />
+    <ClCompile Include="code\client\diag\log\sinks\console_sink.cc" />
+    <ClCompile Include="code\client\diag\log\sinks\file_sink.cc" />
+    <ClCompile Include="code\client\dllmain.cc" />
+    <ClCompile Include="code\client\platform\guard\hyprv.cc" />
+    <ClCompile Include="code\client\platform\hook\binding.cc" />
+    <ClCompile Include="code\client\platform\hook\patch\transaction.cc" />
+    <ClCompile Include="code\client\platform\hook\patch\vtable.cc" />
+    <ClCompile Include="code\client\platform\input\hotkeys.cc" />
+    <ClCompile Include="code\client\platform\input\window.cc" />
+    <ClCompile Include="code\client\render\backend.cc" />
+    <ClCompile Include="code\client\render\dx12\device.cc" />
+    <ClCompile Include="code\client\render\dx12\frame\frame.cc" />
+    <ClCompile Include="code\client\render\dx12\frame\queue.cc" />
+    <ClCompile Include="code\client\render\dx12\swapchain.cc" />
+    <ClCompile Include="code\client\render\fonts\fonts.cc" />
+    <ClCompile Include="code\client\render\fonts\font_data.cc" />
+    <ClCompile Include="code\client\render\ui\draw.cc" />
+    <ClCompile Include="code\client\render\ui\overlay.cc" />
+    <ClCompile Include="code\client\render\ui\style\theme.cc" />
+    <ClCompile Include="code\client\render\ui\style\widgets.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\bots_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\match_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\modes_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\online_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\match\streaks_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\player\career_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\player\kit_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\world\media_tab.cc" />
+    <ClCompile Include="code\client\render\ui\tabs\world\world_tab.cc" />
+    <ClCompile Include="code\client\util\string\text.cc" />
+    <ClCompile Include="code\client\util\system\paths.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\client\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\sdk\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+    <ClCompile Include="code\features\**\*.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\client\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\sdk\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+    <ClInclude Include="code\features\**\*.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\props\paths.props" />
+    <None Include="build\props\compile.props" />
+    <None Include="build\props\link.props" />
+    <None Include="build\config\dev.props" />
+    <None Include="build\config\ship.props" />
+    <None Include="build\vendor\vendor.props" />
+  </ItemGroup>
+</Project>
